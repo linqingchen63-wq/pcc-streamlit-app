@@ -1,0 +1,20 @@
+{
+  "method": "Probabilistic classifier chain",
+  "chain_order": "complication -> PLOS",
+  "formula": "P(C,L|X) = P(C|X) * P(L|X,C)",
+  "seed": 515584,
+  "split_strategy": "joint_outcomes",
+  "models": [
+    "lr",
+    "rf",
+    "xgb",
+    "svm"
+  ],
+  "train_n": 574,
+  "validation_n": 246,
+  "output_dir": "C:\\Users\\27816\\Documents\\codex\\rerun_check_dbmodify3_seed515584_jointsplit_four_models_rfe_min3_optuna20_xgb_conservative_scale1_20260516_175012\\pcc_all_models_complication_to_plos_seed515584",
+  "probabilities": {
+    "complication": "p_complication",
+    "PLOS_marginal": "p_plos_marginal_pcc"
+  }
+}
